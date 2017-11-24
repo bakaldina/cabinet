@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEDRA</title>
+	<link rel="shortcut icon" href='img/favicon.ico%3Fv=4' type="image/x-icon">
+    <link href="Content/css%3Fv=Bz3KZjU_pdOm2wAVr7z_ylCuQzQDs1O8N6pV4cvXc_Q1.css" rel="stylesheet"/>
+
+    <script src="bundles/modernizr%3Fv=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1"></script>
+
+    <script src="bundles/jquery%3Fv=FVs3ACwOLIVInrAl5sdzR2jrCDmVOWFbZMY6g6Q0ulE1"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#logOff").click(function () {
+                window.location.href = '/Account/LogOff';
+                return false;
+                $.ajax({
+                    url: "/Account/LogOff",
+                    type: "POST",
+                    success: function (result) {
+                        window.location.href = '/Account/Login';
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter41614544 = new Ya.Metrika({
+                        id: 41614544,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/41614544" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- / -->
+    <!-- Google.Analytics counter -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-84813725-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    
+
+</head>
+<body>
+    
+
+<link href="Content/landing%3Fv=smo4ZG5QbGtXxn-jT72g52f5XMc4bN46AC_CEIK6Ldc1.css" rel="stylesheet"/>
+
+<script src="Bundles/landing%3Fv=7pniQEYQZqNT-Ph3IzXjITyQNRcNthB6Su3ljJBW-Do1.css"></script>
+
+<!-- BLOCK 1 -->
+<div class="block-1-mobile">
+    <input class="menu-check" type="checkbox" id="menu-check-mobile">
+    <div class="block-1-mobile_panel">
+        <label for="menu-check-mobile" class="block-1-mobile_panel-burger"><span></span></label>
+        <div class="block-1-mobile_panel-title">поиск участков</div>
+        <div class="block-1-mobile_panel-btn"></div>
+    </div>
+    <div class="block-1-mobile_menu">
+        <div class="block-1-mobile_menu-item">
+            <div class="block-1-mobile_menu-item-info-logo">
+                <a href="http://nedraexpert.ru/index.html">
+                    NEDRA EXPERT
+                </a>
+            </div>
+            <ul class="main-menu">
+                <li class="main-menu_list"><a href="search.html">поиск участков</a></li>
+                <li class="main-menu_list"><a href="ratings.html">рейтинги</a></li>
+                <li class="main-menu_list"><a href="wip.html">аналитика</a></li>
+                <li class="main-menu_list"><a href="minerals.html">справочники</a></li>
+                <li class="main-menu_list"><a href="wip.html">оценка</a></li>
+            </ul>
+                    <ul class="register-menu">
+            <li class="register-menu_list"><a href="http://nedraexpert.ru/Account/Login?ReturnUrl=%2F">вход</a></li>
+            <li class="register-menu_list"><a href="Account/Register.html">регистрация</a></li>
+        </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="block-1">
+    <div class="block-1_menu">
+        <div class="block-1_menu-item">
+            <ul>
+                <a href="index.html"><div class="main-logo"></div></a>
+                <li class="menu_icon">
+                    <a href="javascript:;" id="menu_icon">
+                        <span></span>
+                    </a>
+                </li>
+                <li class="center">
+                    <a href="search.html">поиск участков</a>
+                </li>
+                <li class="center">
+                    <a href="ratings.html">рейтинги</a>
+                </li>
+                <li class="center">
+                    <a href="wip.html">аналитика</a>
+                </li>
+                <li class="center">
+                    <a href="minerals.html">справочники</a>
+                </li>
+                <li class="center">
+                    <a href="wip.html">оценка</a>
+                </li>
+                        <li class="right">
+            <a href="http://nedraexpert.ru/Account/Login?ReturnUrl=%2F">Вход</a>
+        </li>
+        <li class="right">
+            <a href="Account/Register.html">Регистрация</a>
+        </li>
+
+            </ul>
+        </div>
+        <div class="dop_menu">
+            <ul>
+                <li class="center">
+                    <a href="wip.html">Цены</a>
+                </li>
+                <li class="center">
+                    <a href="wip.html">Карты</a>
+                </li>
+                <li class="center">
+                    <a href="wip.html">Опросы</a>
+                </li>
+                <li class="center">
+                    <a href="wip.html">Партнеры</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="block-1_info">
+        <div class="block-1_info-main">
+            <div class="block-1_info-main-logo">
+                <a href="https://nedraexpert.ru">
+                    NEDRA EXPERT
+                </a>
+            </div>
+            <div class="block-1_info-main-name">
+                <h1>IT-платформа для недропользователей <br> и геологоразведочных компаний</h1>
+                <div class="block-1_info-main-name-item">
+                    <div class="block-1_info-main-name-item-title">Месторождения, лицензии, <br> недропользователи.</div>
+                    <button class="block-1_info-main-name-item-button"><a href="search.html">Искать участок</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="block-1_info-digits">
+            <div class="block-1_info-digits-item">
+                <span class="text-1">123 000</span><br><span class="text-2">участков недр</span>
+            </div>
+            <div class="block-1_info-digits-item">
+                <span class="text-3">342</span><br><span class="text-4">планируются <br> к лицензированию</span>
+            </div>
+            <div class="block-1_info-digits-item">
+                <span class="text-3">25 152</span><br><span class="text-4">с лицензией</span>
+            </div>
+            <div class="block-1_info-digits-item">
+                <span class="text-3">157</span><br><span class="text-4">на торгах</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BLOCK 2 -->
+<div class="block-2">
+    <div class="block-2_item">
+        <div class="block-2_item-title">
+            <h2>Удобный поиск по основным атрибутам</h2>
+        </div>
+        <div class="block-2_item-table">
+            <a href="search.html"><img class="block-2_item-table-main" src="img/landing/table.png" alt=""></a>
+            <img class="block-2_item-table-mobile" src="img/landing/table-mobile.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- BLOCK 3 -->
+<div class="block-3">
+    <div class="block-3_item">
+        <div class="block-3_item-img">
+            <img src="img/landing/cards.png" alt="">
+        </div>
+        <h2>Результат поиска на карте</h2>
+        <div class="block-3_item-mobile">
+            <p class="block-3_item-mobile-text block-3_item-mobile-text-1">Чертово корыто</p>
+            <p class="block-3_item-mobile-text block-3_item-mobile-text-2">Сухой лог</p>
+            <p class="block-3_item-mobile-text block-3_item-mobile-text-3">Черкесское рудное поле</p>
+        </div>
+    </div>
+</div>
+
+<!-- BLOCK 4 -->
+<div class="block-4">
+    <div class="block-4_item">
+        <div class="block-4_item-img">
+            <img src='img/landing/loop.gif' alt="Поиск по статусу">
+        </div>
+        <div class="block-4_item-title">
+            <h2>Поиск <br>по статусу</h2>
+            <p>Информация о проведении аукционов и планируемых к лицензированию месторождениях и проявлениях</p>
+        </div>
+    </div>
+</div>
+
+<div class="block-4-mobile">
+    <div class="block-4-mobile_title">
+        <h2>Поиск по статусу</h2>
+        <p>Информация о проведении аукционов и планируемых к лицензированию месторождениях и проявлениях</p>
+    </div>
+    <div class="block-4-mobile-gif"></div>
+</div>
+
+<!-- BLOCK 5 -->
+<div class="block-5">
+    <div class="block-5_item">
+        <div class="block-5_item-left">
+            <h3>Детальная информация об участке</h3>
+            <ul>
+                <li class="selected">
+                    <button class="button button-1 active">Основная информация</button>
+                </li>
+                <li>
+                    <button class="button button-2">Сведения о запасах</button>
+                </li>
+                <li>
+                    <button class="button button-3">История участка</button>
+                </li>
+            </ul>
+        </div>
+        <div class="block-5_item-right">
+            <div class="cont container-1 active">
+                <img src="img/landing/block-5-img-1.png%3Fv=2" alt="card">
+            </div>
+            <div class="cont container-2">
+                <img src="img/landing/block-5-img-2.png%3Fv=2" alt="card">
+            </div>
+            <div class="cont container-3">
+                <img src="img/landing/block-5-img-3.png%3Fv=2" alt="card">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-5-mobile">
+    <div class="block-5-mobile_item">
+        <div class="block-5-mobile_item-left">
+            <h3>Детальная <br> информация об участке</h3>
+            <ul>
+                <li class="selected-mobile">
+                    <button class="button-mobile button-1-mobile active">Основная<br> информация</button>
+                </li>
+                <li>
+                    <button class="button-mobile button-2-mobile">Сведения <br> о запасах</button>
+                </li>
+                <li>
+                    <button class="button-mobile button-3-mobile">История<br> участка</button>
+                </li>
+            </ul>
+        </div>
+        <div class="block-5-mobile_item-right">
+            <div class="cont container-1-mobile active">
+                <img src="img/landing/block-5-img-1.png%3Fv=2" alt="card">
+            </div>
+            <div class="cont container-2-mobile">
+                <img src="img/landing/block-5-img-2.png%3Fv=2" alt="card">
+            </div>
+            <div class="cont container-3-mobile">
+                <img src="img/landing/block-5-img-3.png%3Fv=2" alt="card">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BLOCK 6 -->
+<div class="block-6">
+    <div class="block-6_item">
+        <h3>
+            Подготовка заявки <br>на геологическое изучение недр
+        </h3>
+        <img src="img/landing/block-6-img.png" alt="">
+    </div>
+</div>
+
+<!-- BLOCK 7 -->
+<div class="block-7">
+    <div class="block-7_item">
+        <div class="block-7_item-column">
+            <img src="img/landing/block-7-icons-1.png" alt="">
+            <h3>Специалистам <br>отрасли</h3>
+            <ul>
+                <li>
+                    Сведения о всех процедурах <br> при пользовании недрами
+                </li>
+                <li>
+                    Сведения об изученности <br> и освоенности участков
+                </li>
+                <li>
+                    Права и обязанности <br> недропользователя
+                </li>
+                <li>
+                    Сроки и требования <br> к отчетности
+                </li>
+            </ul>
+        </div>
+        <div class="block-7_item-column">
+            <img src="img/landing/block-7-icons-2.png" alt="">
+            <h3>Руководителям <br> компаний</h3>
+            <ul>
+                <li>
+                    Актуальное состояние лицензий <br> на пользование недрами
+                </li>
+                <li>
+                    Полный перечень требований <br> законодательства в области <br> недропользования
+                </li>
+                <li>
+                    Информация об активах <br> на единой карте
+                </li>
+            </ul>
+        </div>
+        <div class="block-7_item-column">
+            <img src="img/landing/block-7-icons-3.png" alt="">
+            <h3>Подрядным организациям <br> и сервисным компаниям</h3>
+            <ul>
+                <li>
+                    Информация о потенциальных <br> заказчиках
+                </li>
+                <li>
+                    Оценка возможных <br> объёмов работ
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- BLOCK 8 -->
+<div class="block-8">
+    <div class="block-8_item">
+        <div class="block-8_item-text">
+            <h3>Подготовка геологической информации для подачи <br>в Росгеолфонд по новым требованиям Минприроды России </h3>
+            <!-- <p>Карты различных масштабов, тематические, геологические карты, космоснимки.</p> -->
+            <button class="block-8_item-text-button"><a href="index.html">Узнать подробнее</a></button>
+        </div>
+        <img src="img/landing/block-8-img.png" alt="">
+    </div>
+</div>
+<div class="block-8-mobile">
+    <div class="block-8-mobile-text">
+        <h3>Подготовка геологической информации для подачи в Росгеолфонд по новым требованиям Минприроды России </h3>
+        <!-- <p>Карты различных масштабов, тематические, геологические карты, космоснимки.</p> -->
+    </div>
+    <img src="img/landing/block-8-img.png" alt="">
+    <button class="block-8-mobile-button"><a href="index.html">Узнать подробнее</a></button>
+</div>
+
+<!-- BLOCK 9 -->
+<div class="block-9">
+    <div class="block-9_item">
+        <img src="img/landing/block-9-img.png" alt="">
+        <div class="block-9_item-text">
+            <h3>Открытый <br> набор карт</h3>
+            <p>Карты различных масштабов, тематические, геологические карты, космоснимки.</p>
+        </div>
+    </div>
+</div>
+
+<div class="block-9-mobile">
+    <div class="block-9-text-mobile">
+        <h3>Открытый <br> набор карт</h3>
+        <p>Карты различных масштабов, тематические, геологические карты, космоснимки.</p>
+    </div>
+    <img src="img/landing/block-9-img.png" alt="">
+</div>
+<!-- BLOCK 10 -->
+<div class="footer">
+    <div class="footer_item">
+        <div class="footer_item-column">
+            <ul class="footer_item-column-1">
+                <a href="index.html"><div class="main-logo"></div></a>
+                <li class="">
+                    <a href="search.html">Поиск участков</a>
+                </li>
+                <li class="">
+                    <a href="ratings.html">Рейтинги</a>
+                </li>
+                <li class="">
+                    <a href="wip.html">Аналитика</a>
+                </li>
+                <li class="">
+                    <a href="minerals.html">Справочники</a>
+                </li>
+                <li class="copyright">
+                    © 2018 Nedra-Expert
+                </li>
+            </ul>
+        </div>
+        <div class="footer_item-column">
+            <ul class="footer_item-column-3">
+                <li class="">
+                    <a href="http://nedraexpert.ru/about-us">О нас</a>
+                </li>
+                <li class="">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+                <li class="">
+                    <a href="offer.html">Лицензионное соглашение</a>
+                </li>
+                <li class="li-text-color">
+                    <a href="tel: +74951158916">+7 (495) 115-8916</a>
+                </li>
+                <li class="li-text-color">
+                    <a href="email: info@nedraexpert.ru">info@nedraexpert.ru</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_item-column">
+            <ul class="footer_item-column-3">
+                <li class="li-text-color">
+                    <a href="http://nedraexpert.ru/Account/Login">Вход</a>
+                </li>
+                <li class="li-text-color">
+                    <a href="Account/Register.html">Регистрация</a>
+                </li>            </ul>
+        </div>
+        <div class="footer_item-column footer_item-column-4">
+            <p>Разработано в «Роскомпьютинг»</p>
+            <a href="http://www.roscomputing.com/ru/Main.aspx" target="_blank">
+                <img src="img/landing/rc_logo.png" title="RosComputing">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-mobile">
+    <div class="footer-mobile_item">
+        <div class="footer-mobile_item-column">
+            <ul class="footer-mobile_item-column-1">
+                <li class="">
+                    <a href="search.html">Поиск участков</a>
+                </li>
+                <li class="">
+                    <a href="ratings.html">Рейтинги</a>
+                </li>
+                <li class="">
+                    <a href="wip.html">Аналитика</a>
+                </li>
+                <li class="">
+                    <a href="minerals.html">Справочники</a>
+                </li>
+                <li class="">
+                    <a href="http://nedraexpert.ru/about-us">О нас</a>
+                </li>
+                <li class="">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+                <li class="">
+                    <a href="offer.html">Лицензионное соглашение</a>
+                </li>
+                <li class="li-text-color">
+                    <a href="tel: +74951158916">+7 (495) 115-8916</a>
+                </li>
+                <li class="li-text-color">
+                    <a href="email: info@nedraexpert.ru">info@nedraexpert.ru</a>
+                </li>
+                <li class="copyright">
+                    © 2018 Nedra-Expert
+                </li>
+            </ul>
+        </div>
+        <div class="footer-mobile_item-column">
+            <ul class="footer-mobile_item-column-2">
+                <li class="li-text-color">
+                    <a href="http://nedraexpert.ru/Account/Login">Вход</a>
+                </li>
+                <li class="li-text-color">
+                    <a href="Account/Register.html">Регистрация</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-mobile_item-end">
+        <p>Разработано в «Роскомпьютинг»</p>
+        <a href="http://www.roscomputing.com/ru/Main.aspx" target="_blank">
+            <img src="img/landing/rc_logo.png" title="RosComputing">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
